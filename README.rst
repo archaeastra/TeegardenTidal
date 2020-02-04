@@ -35,4 +35,11 @@ Expected output
    :width: 300px
    :align: center
    
-
+The files are named as per the parameters from the input (TGb, TGc, TGstar, vpl.in) files. The parts are:
+            1E(7/9): StopTime (vpl.in), the total time the simulation was run for.
+            I0: dInc (TGc.in), the inclination of Teegarden c
+            E032: dEcc (TGb.in), the eccentricity of Teegarden b
+            Tb __ c __: dTidalQ (TGb.in, TGc.in), the tidal parameters of each planet.
+            Ob __ c __: dObliquity (TGb.in, TGc.in), the obliquity of each planet.
+            
+         
