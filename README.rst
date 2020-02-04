@@ -34,7 +34,7 @@ To run this example
 Expected output
 ---------------
 
-.. figure:: Orbit_1E9I0E032Tb70c92Ob0c0.pdf
+.. figure:: 1E9I0E032Tb70c92.png
    :width: 300px
    :align: center
    
