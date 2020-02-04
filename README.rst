@@ -15,7 +15,7 @@ Outputs two files, one managed by 'makeplot.py' to show orbital evolution in acc
 **Date**              02/04/20
 **Author**            Ilyana A. Guez
 **Modules**           DistOrb
-            		      DistRot
+                      DistRot
                       EqTide
                       STELLAR
 **Approx. runtime**   15-45 min
