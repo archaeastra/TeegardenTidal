@@ -9,7 +9,7 @@ Overview
 
 Experimentation using two Earth-sized planetary bodies with dense atmospheres in the habitable zone.
 Multiple permutations and possible system mechanics can be tested.
-Outputs two files, one managed by 'makeplot.py' to show orbital evolution in accordance with the tidal mechanics of dry planets.
+Outputs multiple files managed by 'makeplot.py' to create a graph to show orbital evolution in accordance with the tidal mechanics of dry planets.
 
 ===================   ============
 **Date**              02/04/20
