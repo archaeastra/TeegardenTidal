@@ -34,11 +34,12 @@ To run this example
 Expected output
 ---------------
 
-.. figure:: 1E9I0E032Tb70c92Ob0c0.pdf
+.. figure:: Orbit_1E9I0E032Tb70c92Ob0c0.pdf
    :width: 300px
    :align: center
    
 The files are named as per the parameters from the input (TGb, TGc, TGstar, vpl.in) files. The parts are:
+ - Orbit: The graph describes orbital variations.
  - 1E9: StopTime (vpl.in), the total time the simulation was run for.
  - I0: dInc (TGc.in), the inclination of Teegarden c            
  - E032: dEcc (TGb.in), the eccentricity of Teegarden b
