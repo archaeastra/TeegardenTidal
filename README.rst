@@ -1,6 +1,8 @@
-# TGard
+*****
+TGard
+*****
 Tidal Effects in the Teegarden System
-
+#####################################
 =================
 
 Overview
