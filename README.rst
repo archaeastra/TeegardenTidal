@@ -37,10 +37,6 @@ Expected output
 .. figure::  	Orbit_1E9I0E32Tb70c92Ob0c0.png
    :width: 300px
    :align: center
-.. figure::  	Orbit_1E9I0E32Tb12c50Ob0c0.png
-   :width: 300px
-   :align: center   
-   
    
 The files are named as per the parameters from the input (TGb, TGc, TGstar, vpl.in) files. The parts are:
  - Orbit: The graph describes orbital variations.
