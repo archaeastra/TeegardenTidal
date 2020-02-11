@@ -21,7 +21,7 @@ Outputs multiple files managed by 'makeplot.py' to create a graph to show orbita
 **Approx. runtime**   15-45 min
 ===================   ============
 
-This is an experimental setup to generate possible final configurations of the Teegardens system using varied possible starting conditions including different initial eccentricities, obliquity, tidal parameters and inclination. This example uses no inclination, an eccentricity of 0.32, no obliquity and "dry" tidal conditions.
+This is an experimental setup to generate possible final configurations of the Teegardens system using varied possible starting conditions including different initial eccentricities, obliquity, tidal parameters and inclination. The first example uses no inclination, an eccentricity of 0.32, no obliquity and "dry" tidal conditions; the second example uses no inclination, an eccentricity of 0.32, no obliquity, and "wet" tidal conditions. The parameters for each conditions are can be found in the TGb and TGc input files.
 
 To run this example
 -------------------
@@ -37,6 +37,10 @@ Expected output
 .. figure::  	Orbit_1E9I0E32Tb70c92Ob0c0.png
    :width: 300px
    :align: center
+.. figure::  	Orbit_1E9I0E32Tb12c50Ob0c0.png
+   :width: 300px
+   :align: center   
+   
    
 The files are named as per the parameters from the input (TGb, TGc, TGstar, vpl.in) files. The parts are:
  - Orbit: The graph describes orbital variations.
