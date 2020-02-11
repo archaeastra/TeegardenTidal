@@ -37,7 +37,9 @@ Expected output
 .. figure::  	Orbit_1E9I0E32Tb70c92Ob0c0.png
    :width: 150px
    :align: left
-   
+.. figure::  	Orbit_1E9I0E32Tb12c50Ob0c0.png
+   :width: 150px
+   :align: right   
 The files are named as per the parameters from the input (TGb, TGc, TGstar, vpl.in) files. The parts are:
  - Orbit: The graph describes orbital variations.
  - 1E9: StopTime (vpl.in), the total time the simulation was run for.
