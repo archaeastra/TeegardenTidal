@@ -26,6 +26,13 @@ This set-up allows the user to generate simulation data and plot results for a s
  - Longitude of Pericenter
  - Precession Angle
  - Tidal Tau
+ 
+ The different plotting routines are:
+ - CSOH, Cassini State Obliquity Histogram. Figure 2 in the paper.
+ - THeP, Tidal Heating Plot. Figure 3 in the paper.
+ - THeSP, Tidal heating Substraction Plot. Figure 4 in the paper.
+ - POE, Plot of Orbital Evolution. Figure 5 in the paper.
+
 
 To run this example
 -------------------
@@ -33,6 +40,7 @@ To run this example
 .. code-block:: bash
     vspace vspace.in
     multi-planet vspace.in <no. cores>
+    python THeSP_Control.py
     python [RoutineName].py <pdf | png>
 
 Note, the second step of this code block can take several days to complete. It is recommended to shunt this process to the background.
