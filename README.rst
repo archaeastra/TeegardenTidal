@@ -41,6 +41,7 @@ To run this example
     vspace vspace.in
     multi-planet vspace.in <no. cores>
     python THeSP_Control.py
+    multi_planet ctrl.in <no. cores>
     python [RoutineName].py <pdf | png>
 
 Note, the second step of this code block can take several days to complete. It is recommended to shunt this process to the background.
