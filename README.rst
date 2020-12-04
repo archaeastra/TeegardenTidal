@@ -45,4 +45,4 @@ Expected output
    :align: left
 .. figure::  	[RoutineName].png
    :width: 150px
-   :align: right   
+   :align: right  
