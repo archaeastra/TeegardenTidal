@@ -23,8 +23,8 @@ if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
     exit(1)
 """
 #InputDir = input("Input Directory:")
-InputDirb = "./TGMC/TGMC5/TGMCDistbycn"
-InputDirc = "./TGMC/TGMC5/TGMCDistbncy"
+InputDirb = "D:/TGMCDistbycn"
+InputDirc = "D:/TGMCDistbncy"
 #Hard coded because I'm tired of typing this in
 
 #Definitions
@@ -58,7 +58,8 @@ CFin=[]
 
 #Create an output file
 
-OTFL = input("Create output file? y/n:")
+#OTFL = input("Create output file? y/n:")
+OTFL = "n"
 csl = sys.stdout
 if OTFL == 'y':
     out = open("CSOHmerge.log", 'w+')
@@ -131,8 +132,6 @@ for list in BInit, CInit, BFin, CFin:
 
 #Turns out the value are already in degrees, so we'll skip this for the final parts.
 
-print (BFin)
-
 #Plotting:
 
 fig, ax = plt.subplots(2,2, sharex=False);                                  
@@ -140,33 +139,34 @@ fig.set_size_inches(5,4);
 #fig.suptitle("Cassini State Obliquity Distribution", fontsize=12);
 fig.tight_layout(pad=2, w_pad=1.5);      
 
-ax[0,0].hist(BInit, bins=100, facecolor='LightGray');
-ax[0,0].set_xlabel('Initial Obliquity of TGb', fontsize=12);
+ax[0,0].hist(BInit, bins=25, facecolor='DimGray');
+ax[0,0].set_xlabel('Initial Obliquity of b', fontsize=12);
 ax[0,0].set_ylabel('Number', fontsize=10);
 ax[0,0].set_xticklabels(["0", "60", "120", "180"]);
 ax[0,0].set_xticks([0, 60, 120, 180]);
 
 
-ax[0,1].hist(CInit, bins=100, facecolor='DimGray');
-ax[0,1].set_xlabel('Initial Obliquity of TGc', fontsize=12);
+ax[0,1].hist(CInit, bins=25, facecolor='Gray');
+ax[0,1].set_xlabel('Initial Obliquity of c', fontsize=12);
 ax[0,1].set_xticklabels(["0", "60", "120", "180"]);
 ax[0,1].set_xticks([0, 60, 120, 180]);
 
 
-ax[1,0].hist(BFin, range(5), facecolor='Silver');
-ax[1,0].set_xlabel('Final Obliquity of TGb ($rad$)', fontsize=12);
+ax[1,0].hist(BFin, bins=1000, facecolor='DimGray');
+ax[1,0].set_xlabel('Final Obliquity of b ($rad$)', fontsize=12);
 ax[1,0].set_ylabel('Number', fontsize=10);
-#ax[1,0].set_xticklabels(["0", "1", "2", "5"]);
-#ax[1,0].set_xticks([0, 1, 2, 5]);
-#ax[1,0].set_xlim(0, 5);
+ax[1,0].set_xticklabels(["0", "1", "2", "3"]);
+ax[1,0].set_xticks([0, 1, 2, 3]);
+ax[1,0].set_xlim(0,3);
 ax[1,0].set_yscale('log');
+#ax[1,0].set_xscale('log');
 
 
-ax[1,1].hist(CFin, bins=100, facecolor='Gray');
-ax[1,1].set_xlabel('Final Obliquity of TGc ($rad$)', fontsize=12);
-ax[1,1].set_xticklabels(["0", "0.1", "0.2", "0.5", "1"]);
-ax[1,1].set_xticks([0, 0.1, 0.2, 0.5, 1]);
-ax[1,1].set_xscale('log');
+ax[1,1].hist(CFin, bins=25, facecolor='Gray');
+ax[1,1].set_xlabel('Final Obliquity of c ($rad$)', fontsize=12);
+#ax[1,1].set_xticklabels(["0", "0.1", "0.2", "0.5", "1"]);
+#ax[1,1].set_xticks([0, 0.1, 0.2, 0.5, 1]);
+#ax[1,1].set_xscale('log');
 ax[1,1].set_yscale('log');
 
 plt.show()
