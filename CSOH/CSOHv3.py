@@ -4,6 +4,7 @@
 
 import matplotlib as mpl
 #mpl.use('Agg')
+#This is used when plotting without a screen
 import matplotlib.pyplot as plt
 import numpy as np
 import math
