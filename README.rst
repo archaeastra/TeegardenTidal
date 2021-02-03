@@ -45,6 +45,7 @@ To run this example
     python [RoutineName].py <pdf | png>
 
 Note, the second step of this code block can take several days to complete. It is recommended to shunt this process to the background.
+Instructions and details for each routine are present in their respective folders.
 
 Expected output
 ---------------
