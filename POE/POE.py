@@ -6,7 +6,8 @@ Makes a plot of various planet stats
 from __future__ import division, print_function
 
 import matplotlib as mpl
-mpl.use('Agg')
+#mpl.use('Agg')
+#Used when plotting without a screen.
 import matplotlib.pyplot as plt
 import numpy as np
 import vplot as vpl
@@ -27,8 +28,11 @@ mpl.rcParams['figure.figsize'] = (10,8)
 mpl.rcParams['font.size'] = 16.0
 
 # Load data
-InputDirb = "./TGMC/TGMC5/TGMCDistbycn/TGMCDrand_002"
-InputDirc = "./TGMC/TGMC5/TGMCDistbncy/TGMCDrand_002"
+InputDirb = input("Input Directory b:")
+InputDirc = input("Input Directory c:")
+#You can also hard code the addresses.
+#InputDirb = "./TGMC/TGMC5/TGMCDistbycn/TGMCDrand_002"
+#InputDirc = "./TGMC/TGMC5/TGMCDistbncy/TGMCDrand_002"
 outputb = vpl.GetOutput(InputDirb)
 outputc = vpl.GetOutput(InputDirc)
 print("Directories Located")
@@ -49,10 +53,7 @@ print("Files Found")
 # Plot
 fig, axes = plt.subplots(nrows=2, ncols=2, sharex=False)
 #fig.set_size_inches(5,4);                                            
-fig.tight_layout(pad=2, w_pad=1.5); 
-#b = LightGreen / DimGray
-#c = Plum / DarkGray
-  
+fig.tight_layout(pad=2, w_pad=1.5);   
 
 axes[0,0].plot(time, obbb, color="DimGray", label="Teegarden b")
 axes[0,0].plot(time, obbc, color="DarkGray", label="Teegarden c")
@@ -85,7 +86,6 @@ axes[1,1].set_xlabel("Time [Myr]")
 axes[1,1].set_ylabel("Tidal Heating ($W/m^{2}$)")
 
 if (sys.argv[1] == 'pdf'):
-    fig.savefig('POEsbw.pdf', bbox_inches="tight", dpi=600)
+    fig.savefig('POE.pdf', bbox_inches="tight", dpi=600)
 if (sys.argv[1] == 'png'):
-    fig.savefig('POEsbw.png', bbox_inches="tight", dpi=600)
-#fig.savefig("Rodriguez2011_Figs23.pdf", bbox_inches="tight", dpi=600)
+    fig.savefig('POE.png', bbox_inches="tight", dpi=600)
