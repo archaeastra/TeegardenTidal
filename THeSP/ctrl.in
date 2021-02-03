@@ -1,0 +1,31 @@
+srcfolder  .
+destfolder TGMCDistbycy_CTRL
+trialname  TGMCD
+samplemode random
+randsize 1000
+seed 7
+
+file   vpl.in
+
+file   TGstar.in
+
+file   TGb.in
+dCosObl [-1, 1, u] ob
+dEcc	[0, 0.16, u] e
+dInc	[0, 15, u] i
+dMass	[-0.93, -1.18, u] m
+dLongA	[0, 360, u] la
+dLongP	[0, 360, u] lp
+dPrecA	[0, 360, u] pa
+dTidalTau	[-100, -700, u] t
+
+
+file   TGc.in
+dCosObl [-1, 1, u] ob
+dEcc	[0, 0.16, u] e
+dInc	[0, 15, u] i
+dMass	[-0.96, -1.27, u] m
+dLongA	[0, 360, u] la
+dLongP	[0, 360, u] lp
+dPrecA	[0, 360, u] pa
+dTidalTau	[-400, -1000, u] t
