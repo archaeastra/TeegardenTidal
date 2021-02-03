@@ -47,8 +47,8 @@ To run this example
 Note, the second step of this code block can take several days to complete. It is recommended to shunt this process to the background.
 Instructions and details for each routine are present in their respective folders.
 
-Expected output
----------------
+Expected output(s)
+------------------
 
 .. figure::  	[RoutineName].png
    :width: 150px
