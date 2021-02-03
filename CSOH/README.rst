@@ -7,7 +7,7 @@ Overview
 A python script to replicate Figure 3 of Tidal Effects on the Planets of Teegarden's Star. 
 
 ===================   ============
-**Date**              04/12/20
+**Date**              03/02/20
 **Author**            Ilyana A. Guez
 **Approx. runtime**   1 minute
 ===================   ============
