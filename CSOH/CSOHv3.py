@@ -22,10 +22,11 @@ if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
     print('Options are: pdf, png')
     exit(1)
 """
-#InputDir = input("Input Directory:")
-InputDirb = "D:/TGMCDistbycn"
-InputDirc = "D:/TGMCDistbncy"
-#Hard coded because I'm tired of typing this in
+InputDirb = input("Input Directory b:")
+InputDirc = input("Input Directory c:")
+#You may also hard code the addresses
+#InputDirb = "D:/TGMCDistbycn"
+#InputDirc = "D:/TGMCDistbncy
 
 #Definitions
 def Strip(pattern):      
@@ -57,9 +58,8 @@ BFin=[]
 CFin=[]
 
 #Create an output file
-
-#OTFL = input("Create output file? y/n:")
-OTFL = "n"
+OTFL = input("Create output file? y/n:")
+#OTFL = "n"
 csl = sys.stdout
 if OTFL == 'y':
     out = open("CSOHmerge.log", 'w+')
@@ -172,7 +172,7 @@ ax[1,1].set_yscale('log');
 plt.show()
 """
 if (sys.argv[1] == 'pdf'):
-    fig.savefig("CSOHmergebw.pdf", bbox_inches="tight", dpi=600)
+    fig.savefig("CSOH.pdf", bbox_inches="tight", dpi=600)
 if (sys.argv[1] == 'png'):
-    fig.savefig("CSOHmergebw.png", bbox_inches="tight", dpi=600)
+    fig.savefig("CSOH.png", bbox_inches="tight", dpi=600)
 """
