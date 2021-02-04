@@ -10,10 +10,11 @@ import sys
 import os
 import re
 
-#InputDir = input("Input Directory:")
-InputDirb = "D:/TGMCDistbycn"
-InputDirc = "D:/TGMCDistbncy"
-#Hard coded because I'm tired of typing this in
+InputDirb = input("Input Directory b:")
+InputDirc = input("Input Directoru c:")
+#Can use be hard coded if needed
+#InputDirb = "D:/TGMCDistbycn"
+#InputDirc = "D:/TGMCDistbncy"
 
 #Definitions
 def Strip(pattern):      
