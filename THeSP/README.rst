@@ -20,7 +20,7 @@ To run this example
 .. code-block:: bash
     python THeSP_Control.py
     multi_planet ctrl.in <no. cores>
-    pythong THeSP.py <pdf | png>   
+    python THeSP.py <pdf | png>   
 
 THeSP_Control must be run first to create the control files, which must then be run through vplanet, using multi-planet parallelisation,
 before the final plot can be created. Make sure the file name in ctrl.in matches your input files but with the '_CTRL' suffix.
