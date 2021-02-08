@@ -12,7 +12,6 @@ import sys
 import os
 import re
 
-"""
 # Check correct number of arguments
 if (len(sys.argv) != 2):
     print('ERROR: Incorrect number of arguments.')
@@ -22,12 +21,12 @@ if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
     print('ERROR: Unknown file format: '+sys.argv[1])
     print('Options are: pdf, png')
     exit(1)
-"""
-#InputDirb = input("Input Directory b:")
-#InputDirc = input("Input Directory c:")
+
+InputDirb = input("Input Directory b:")
+InputDirc = input("Input Directory c:")
 #Can also hard code the addresses.
-InputDirb = "D:/TGMCDistbycn"
-InputDirc = "D:/TGMCDistbncy"
+#InputDirb = "D:/TGMCDistbycn"
+#InputDirc = "D:/TGMCDistbncy"
 
 #Definitions
 def Strip(pattern):      
@@ -75,7 +74,7 @@ TC=[]
 OTFL = "n"
 csl = sys.stdout
 if OTFL == 'y':
-    out = open("scatter.log", 'w+')
+    out = open("Scatter.log", 'w+')
     sys.stdout = out
     print("Log File of Values found")
 else: 
@@ -155,9 +154,7 @@ ax[1].legend(loc='best')
 
 plt.show()
 
-"""
 if (sys.argv[1] == 'pdf'):
-    fig.savefig("THeP.pdf", bbox_inches="tight", dpi=600)
+    fig.savefig("Scatter.pdf", bbox_inches="tight", dpi=600)
 if (sys.argv[1] == 'png'):
-    fig.savefig("THeP.png", bbox_inches="tight", dpi=600)
-"""
+    fig.savefig("Scatter.png", bbox_inches="tight", dpi=600)
