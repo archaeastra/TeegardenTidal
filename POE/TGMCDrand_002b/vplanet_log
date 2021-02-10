@@ -1,0 +1,36 @@
+INFO: sUnitMass set in vpl.in, all bodies will use this unit.
+INFO: sUnitTime set in vpl.in, all bodies will use this unit.
+INFO: sUnitAngle set in vpl.in, all bodies will use this unit.
+INFO: sUnitLength set in vpl.in, all bodies will use this unit.
+INFO: sUnitTemp set in vpl.in, all bodies will use this unit.
+INFO: dRotPeriod < 0 in file TGstar.in, units assumed to be Days.
+INFO: dMass < 0 in file TGb.in, units assumed to be Earth masses.
+INFO: dSemi < 0 in file TGb.in, units assumed to be AU.
+INFO: dRotPeriod < 0 in file TGb.in, units assumed to be Days.
+INFO: dMass < 0 in file TGc.in, units assumed to be Earth masses.
+INFO: dSemi < 0 in file TGc.in, units assumed to be AU.
+INFO: dRotPeriod < 0 in file TGc.in, units assumed to be Days.
+INFO: dTidalTau < 0 in file TGstar.in, units assumed to be Seconds.
+INFO: dTidalTau < 0 in file TGb.in, units assumed to be Seconds.
+INFO: dTidalTau < 0 in file TGc.in, units assumed to be Seconds.
+INFO: sOutFile not set, defaulting to TGard.TGstar.forward.
+INFO: sOutFile not set, defaulting to TGard.TGb.forward.
+INFO: sOutFile not set, defaulting to TGard.TGc.forward.
+INFO: sIntegrationMethod not set, defaulting to Runge-Kutta4.
+TGstar's Im(k_2) verified.
+TGb's Im(k_2) verified.
+TGc's Im(k_2) verified.
+INFO: DeltaTime output for first step is defined to be 0 when bVarDt = 1.
+Input files read.
+INFO: Age set in one file, all bodies will have this age.
+INFO: Radius of Gyration set for body 0, but this value will be computed from the grid.
+All of TGstar's modules verified.
+All of TGb's modules verified.
+All of TGc's modules verified.
+Input files verified.
+Log file written.
+TGb spin locked at 8986.630117 years.
+TGc spin locked at 5.651373e+04 years.
+Evolution completed.
+Log file updated.
+Simulation completed.

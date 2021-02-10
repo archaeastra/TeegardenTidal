@@ -1,0 +1,37 @@
+# Teegarden-b Parameters
+sName		TGb				# Body's name
+saModules 	eqtide distorb distrot # Modules
+
+# Physical Properties
+dMass -1.1543124228463366
+#dRadius		-1.20  		# Radius, negative -> Earth radii
+sMassRad	Sotin07
+dRotPeriod	-1.0  		# Rotation period, negative -> days
+dCosObl -0.123181537118213
+dRadGyra	0.4             # Radius of gyration (unitless)
+
+# Orbital Properties
+dEcc 0.061077537322545866
+dSemi           -0.0252          # Semi-major axis, negative -> AU
+
+# Eqtide Properties
+dTidalTau -149.60592531558325
+dK2             0.3             # Love number of degree 2
+dMaxLockDiff    0.01            # Tidally lock when spin period is within 1% of orbital period
+saTidePerts     TGstar          # Tidally interacting with star
+
+# DISTORB Parameters
+dInc 11.155648684912148
+dLongA 239.6079399276036
+dLongP 74.4362239705067
+sOrbitModel     rd4             # Use 4th Order disturbing function model
+
+# DISTROT Parameters
+dPrecA	0
+bCalcDynEllip   1
+# Distrot run.
+
+
+#Output
+saOutputOrder Time -RotPer LongP SemimajorAxis Eccentricity LockTime TideLock -SurfEnFluxEqtide $
+		Obli PrecA DeltaT CassiniOne CassiniTwo PrecFNat DynEllip 
