@@ -28,11 +28,11 @@ mpl.rcParams['figure.figsize'] = (10,8)
 mpl.rcParams['font.size'] = 16.0
 
 # Load data
-InputDirb = input("Input Directory b:")
-InputDirc = input("Input Directory c:")
+#InputDirb = input("Input Directory b:")
+#InputDirc = input("Input Directory c:")
 #You can also hard code the addresses.
-#InputDirb = "./TGMCDrand_002b"
-#InputDirc = "./TGMCDrand_002b"
+InputDirb = "./TGMCDrand_002b"
+InputDirc = "./TGMCDrand_002b"
 outputb = vpl.GetOutput(InputDirb)
 outputc = vpl.GetOutput(InputDirc)
 print("Directories Located")
@@ -81,7 +81,8 @@ axes[1,0].set_ylabel("Rotational Period (days)")
 axes[1,1].plot(time, tidhb, color="DimGray")
 axes[1,1].plot(time, tidhc, color="DarkGray")
 axes[1,1].set_xlim(time.min(),time.max())
-axes[1,1].set_xlim(0, 0.05)
+axes[1,1].set_xlim(0, 0.15)
+axes[1,1].set_yscale('log')
 axes[1,1].set_xlabel("Time [Myr]")
 axes[1,1].set_ylabel("Tidal Heating ($W/m^{2}$)")
 
