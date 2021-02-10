@@ -32,7 +32,7 @@ mpl.rcParams['font.size'] = 16.0
 #InputDirc = input("Input Directory c:")
 #You can also hard code the addresses.
 InputDirb = "./TGMCDrand_002b"
-InputDirc = "./TGMCDrand_002b"
+InputDirc = "./TGMCDrand_002c"
 outputb = vpl.GetOutput(InputDirb)
 outputc = vpl.GetOutput(InputDirc)
 print("Directories Located")
