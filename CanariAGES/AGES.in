@@ -1,0 +1,19 @@
+srcfolder  .
+destfolder Canari1K2_AGES
+trialname  Canari
+samplemode random
+randsize 1000
+seed 7
+
+file   vpl.in
+dStopTime [1e7]
+
+file   TGstar.in
+
+file   TGb.in
+dCosObl [-1, 1, u] o
+dPrecA	[0, 360, u] pa
+
+file   TGc.in
+dCosObl [-1, 1, u] ob
+dPrecA	[0, 360, u] pa
