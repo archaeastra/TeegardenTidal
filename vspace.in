@@ -1,24 +1,28 @@
 srcfolder  .
-destfolder TGMCDistbycy
-trialname  TGMCD
+destfolder Canari1K2
+trialname  Canari
 samplemode random
 randsize 1000
 seed 7
 
 file   vpl.in
+dStopTime [8e9, 12e9, u]
+
 
 file   TGstar.in
+dMass [0.089, 0.009, g]
+dRadius [-0.107, 0.004, g]
 
 file   TGb.in
-dCosObl [-1, 1, u] ob
+dCosObl [-1, 1, u] o
 dEcc	[0, 0.16, u] e
 dInc	[0, 15, u] i
 dMass	[-0.93, -1.18, u] m
 dLongA	[0, 360, u] la
 dLongP	[0, 360, u] lp
 dPrecA	[0, 360, u] pa
-dTidalTau	[-100, -700, u] t
-
+dTidalTau	[-100, -1000, u] t
+dOrbPeriod [-4.91, 0.0014, g] op
 
 file   TGc.in
 dCosObl [-1, 1, u] ob
@@ -28,4 +32,5 @@ dMass	[-0.96, -1.27, u] m
 dLongA	[0, 360, u] la
 dLongP	[0, 360, u] lp
 dPrecA	[0, 360, u] pa
-dTidalTau	[-400, -1000, u] t
+dTidalTau	[-100, -1000, u] t
+dOrbPeriod [-11.409, 0.0009, g] op
