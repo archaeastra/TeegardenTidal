@@ -91,10 +91,10 @@ for root, dirs, files in os.walk(InputDir, topdown=False):
                 Seek(log,"----\sFINAL\sSYSTEM\sPROPERTIES\s----") 
                 Seek(log, "-----\sBODY:\sTGb\s----") 
                 obb = Find(log, "\(Obliquity\)")
-                BFin.append(obb)
+                BFin.append(np.log10(obb))
                 Seek(log, "-----\sBODY:\sTGc\s----") 
                 obc = Find(log, "\(Obliquity\)")
-                CFin.append(obc)
+                CFin.append(np.log10(obc))
                 if OTFL == 'y' or 'c':
                     #print("----FILE:" + os.path.join(root, name))
                     print("--FINAL--") 
@@ -116,40 +116,41 @@ for list in BInit, CInit, BFin, CFin:
 
 #Plotting:
 
-fig, ax = plt.subplots(2,2, sharex=False);                                  
-fig.set_size_inches(8,6);                                                 
-#fig.suptitle("Cassini State Obliquity Distribution", fontsize=12);
-fig.tight_layout(pad=2, w_pad=1.5);      
+fig, ax = plt.subplots(2,2, sharex=False)                                  
+fig.set_size_inches(8,6)                                                
+#fig.suptitle("Cassini State Obliquity Distribution", fontsize=12)
+fig.tight_layout(pad=2, w_pad=1.5);     
 
-ax[0,0].hist(BInit, bins=25, facecolor='DimGray');
-ax[0,0].set_xlabel('Initial Obliquity of b', fontsize=12);
-ax[0,0].set_ylabel('Number', fontsize=10);
-ax[0,0].set_xticklabels(["0", "60", "120", "180"]);
-ax[0,0].set_xticks([0, 60, 120, 180]);
-
-
-ax[0,1].hist(CInit, bins=25, facecolor='Gray');
-ax[0,1].set_xlabel('Initial Obliquity of c', fontsize=12);
-ax[0,1].set_xticklabels(["0", "60", "120", "180"]);
-ax[0,1].set_xticks([0, 60, 120, 180]);
+ax[0,0].hist(BInit, bins=25, facecolor='DimGray')
+ax[0,0].set_xlabel('Initial Obliquity of b', fontsize=12)
+ax[0,0].set_ylabel('Number', fontsize=10)
+ax[0,0].set_xticklabels(["0", "60", "120", "180"])
+ax[0,0].set_xticks([0, 60, 120, 180])
 
 
-ax[1,0].hist(BFin, bins=10, facecolor='DimGray');
-ax[1,0].set_xlabel('Final Obliquity of b (deg)', fontsize=12);
-ax[1,0].set_ylabel('Number', fontsize=10);
+ax[0,1].hist(CInit, bins=25, facecolor='Gray')
+ax[0,1].set_xlabel('Initial Obliquity of c', fontsize=12)
+ax[0,1].set_xticklabels(["0", "60", "120", "180"])
+ax[0,1].set_xticks([0, 60, 120, 180])
+
+
+ax[1,0].hist(BFin, bins=25, facecolor='DimGray')
+ax[1,0].set_xlabel('Log Final Obliquity of b (deg)', fontsize=12)
+ax[1,0].set_ylabel('Number', fontsize=10)
 #ax[1,0].set_xticklabels(["0", "1", "2", "3"]);
 #ax[1,0].set_xticks([0, 1, 2, 3]);
-#ax[1,0].set_xlim(0,3);
-ax[1,0].set_yscale('log');
+ax[1,0].set_xlim(-5,1)
+#ax[1,0].set_yscale('log');
 #ax[1,0].set_xscale('log');
 
 
-ax[1,1].hist(CFin, bins=25, facecolor='Gray');
-ax[1,1].set_xlabel('Final Obliquity of c (deg)', fontsize=12);
+ax[1,1].hist(CFin, bins=25, facecolor='Gray')
+ax[1,1].set_xlabel('Log Final Obliquity of c (deg)', fontsize=12)
+ax[1,0].set_xlim(-5,2)
 #ax[1,1].set_xticklabels(["0", "0.1", "0.2", "0.5", "1"]);
 #ax[1,1].set_xticks([0, 0.1, 0.2, 0.5, 1]);
 #ax[1,1].set_xscale('log');
-ax[1,1].set_yscale('log');
+#ax[1,1].set_yscale('log');
 
 plt.show()
 
